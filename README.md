@@ -157,16 +157,8 @@ ORDER BY 2 DESC
 LIMIT 5
 ```
 
-9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
-```sql
-SELECT 
-    category,    
-    COUNT(DISTINCT customer_id) as cnt_unique_cs
-FROM retail_sales
-GROUP BY category
-```
 
-10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
+9. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
 ```sql
 WITH hourly_sale
 AS
